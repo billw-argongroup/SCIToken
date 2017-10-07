@@ -251,8 +251,20 @@ tests.push ({
           }).get ();
 
         assert (
-          'transferEvents.length == 0',
-          transferEvents.length == 0);
+          'transferEvents.length == 1',
+          transferEvents.length == 1);
+
+        assert (
+          'transferEvents [0].args._from == test.bob.address',
+          transferEvents [0].args._from == test.bob.address);
+
+        assert (
+          'transferEvents [0].args._to == test.bob.address',
+          transferEvents [0].args._to == test.bob.address);
+
+        assert (
+          'transferEvents [0].args._value == 1000',
+          transferEvents [0].args._value == 1000);
 
         var execResultEvents = test.bob.Result (
           {}, 
@@ -323,8 +335,20 @@ tests.push ({
           }).get ();
 
         assert (
-          'transferEvents.length == 0',
-          transferEvents.length == 0);
+          'transferEvents.length == 1',
+          transferEvents.length == 1);
+
+        assert (
+          'transferEvents [0].args._from == test.bob.address',
+          transferEvents [0].args._from == test.bob.address);
+
+        assert (
+          'transferEvents [0].args._to == test.dave.address',
+          transferEvents [0].args._to == test.dave.address);
+
+        assert (
+          'transferEvents [0].args._value == 0',
+          transferEvents [0].args._value == 0);
 
         var execResultEvents = test.bob.Result (
           {}, 
@@ -480,8 +504,20 @@ tests.push ({
           }).get ();
 
         assert (
-          'transferEvents.length == 0',
-          transferEvents.length == 0);
+          'transferEvents.length == 1',
+          transferEvents.length == 1);
+
+        assert (
+          'transferEvents [0].args._from == test.bob.address',
+          transferEvents [0].args._from == test.bob.address);
+
+        assert (
+          'transferEvents [0].args._to == test.bob.address',
+          transferEvents [0].args._to == test.bob.address);
+
+        assert (
+          'transferEvents [0].args._value == 100',
+          transferEvents [0].args._value == 100);
 
         var execResultEvents = test.carol.Result (
           {}, 
@@ -561,8 +597,20 @@ tests.push ({
           }).get ();
 
         assert (
-          'transferEvents.length == 0',
-          transferEvents.length == 0);
+          'transferEvents.length == 1',
+          transferEvents.length == 1);
+
+        assert (
+          'transferEvents [0].args._from == test.bob.address',
+          transferEvents [0].args._from == test.bob.address);
+
+        assert (
+          'transferEvents [0].args._to == test.dave.address',
+          transferEvents [0].args._to == test.dave.address);
+
+        assert (
+          'transferEvents [0].args._value == 0',
+          transferEvents [0].args._value == 0);
 
         var execResultEvents = test.carol.Result (
           {}, 
@@ -777,8 +825,20 @@ tests.push ({
           }).get ();
 
         assert (
-          'transferEvents.length == 0',
-          transferEvents.length == 0);
+          'transferEvents.length == 1',
+          transferEvents.length == 1);
+
+        assert (
+          'transferEvents [0].args._from == test.dave.address',
+          transferEvents [0].args._from == test.dave.address);
+
+        assert (
+          'transferEvents [0].args._to == test.bob.address',
+          transferEvents [0].args._to == test.bob.address);
+
+        assert (
+          'transferEvents [0].args._value == 0',
+          transferEvents [0].args._value == 0);
 
         var execResultEvents = test.dave.Result (
           {}, 
@@ -1015,8 +1075,20 @@ tests.push ({
           }).get ();
 
         assert (
-          'transferEvents.length == 0',
-          transferEvents.length == 0);
+          'transferEvents.length == 1',
+          transferEvents.length == 1);
+
+        assert (
+          'transferEvents [0].args._from == test.dave.address',
+          transferEvents [0].args._from == test.dave.address);
+
+        assert (
+          'transferEvents [0].args._to == test.bob.address',
+          transferEvents [0].args._to == test.bob.address);
+
+        assert (
+          'transferEvents [0].args._value == 0',
+          transferEvents [0].args._value == 0);
 
         var execResultEvents = test.carol.Result (
           {}, 
@@ -1460,8 +1532,20 @@ tests.push ({
           }).get ();
 
         assert (
-          'transferEvents.length == 0',
-          transferEvents.length == 0);
+          'transferEvents.length == 1',
+          transferEvents.length == 1);
+
+        assert (
+          'transferEvents [0].args._from == test.dave.address',
+          transferEvents [0].args._from == test.dave.address);
+
+        assert (
+          'transferEvents [0].args._to == test.carol.address',
+          transferEvents [0].args._to == test.carol.address);
+
+        assert (
+          'transferEvents [0].args._value == 0',
+          transferEvents [0].args._value == 0);
 
         var execResultEvents = test.dave.Result (
           {}, 
@@ -1600,8 +1684,20 @@ tests.push ({
           }).get ();
 
         assert (
-          'transferEvents.length == 0',
-          transferEvents.length == 0);
+          'transferEvents.length == 1',
+          transferEvents.length == 1);
+
+        assert (
+          'transferEvents [0].args._from == test.dave.address',
+          transferEvents [0].args._from == test.dave.address);
+
+        assert (
+          'transferEvents [0].args._to == test.dave.address',
+          transferEvents [0].args._to == test.dave.address);
+
+        assert (
+          'transferEvents [0].args._value == 100',
+          transferEvents [0].args._value == 100);
 
         var execResultEvents = test.dave.Result (
           {}, 
@@ -2039,8 +2135,20 @@ tests.push ({
           }).get ();
 
         assert (
-          'transferEvents.length == 0',
-          transferEvents.length == 0);
+          'transferEvents.length == 1',
+          transferEvents.length == 1);
+
+        assert (
+          'transferEvents [0].args._from == test.dave.address',
+          transferEvents [0].args._from == test.dave.address);
+
+        assert (
+          'transferEvents [0].args._to == test.carol.address',
+          transferEvents [0].args._to == test.carol.address);
+
+        assert (
+          'transferEvents [0].args._value == 0',
+          transferEvents [0].args._value == 0);
 
         var execResultEvents = test.carol.Result (
           {}, 
@@ -2290,8 +2398,20 @@ tests.push ({
           }).get ();
 
         assert (
-          'transferEvents.length == 0',
-          transferEvents.length == 0);
+          'transferEvents.length == 1',
+          transferEvents.length == 1);
+
+        assert (
+          'transferEvents [0].args._from == test.dave.address',
+          transferEvents [0].args._from == test.dave.address);
+
+        assert (
+          'transferEvents [0].args._to == test.dave.address',
+          transferEvents [0].args._to == test.dave.address);
+
+        assert (
+          'transferEvents [0].args._value == 200',
+          transferEvents [0].args._value == 200);
 
         var execResultEvents = test.carol.Result (
           {}, 
