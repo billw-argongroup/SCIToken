@@ -241,9 +241,10 @@ contract AbstractSnapshottableToken is SafeMath, Token {
       updateHistoricalBalances (_to);
       accounts [_from].balance = safeSub (accounts [_from].balance, _value);
       accounts [_to].balance = safeAdd (accounts [_to].balance, _value);
-      Transfer (_from, _to, _value);
-      return true;
-    } else return true;
+    }
+
+    Transfer (_from, _to, _value);
+    return true;
   }
 
   /**
